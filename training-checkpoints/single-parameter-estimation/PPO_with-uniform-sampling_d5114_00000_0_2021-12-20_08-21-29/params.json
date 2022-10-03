@@ -1,0 +1,83 @@
+{
+  "callbacks": "<class '__main__.TrackingCallback'>",
+  "entropy_coeff": 0.005,
+  "env": "with-uniform-sampling",
+  "env_config": {
+    "booking-horizon": 22,
+    "discount-rate": 1.0,
+    "fare-structure": [
+      50,
+      70,
+      90,
+      110,
+      130,
+      150,
+      170,
+      190,
+      210,
+      230
+    ],
+    "forecasting": {
+      "params-range": [
+        [
+          0.2100446001696804,
+          1.3862943611198906
+        ]
+      ],
+      "with-action-distribution": false,
+      "with-noise-std": false
+    },
+    "initial-capacity": 50,
+    "mean-arrivals": [
+      4.0
+    ],
+    "one-hot": false,
+    "price-sensitivity": [
+      1.3862943611198906,
+      0.2100446001696804
+    ],
+    "rwd-fn": "expected-rwd",
+    "warmup-policy": "random",
+    "with-true-params": false
+  },
+  "evaluation_interval": 0,
+  "framework": "tf",
+  "gamma": 1.0,
+  "horizon": 440,
+  "lambda": 0.15,
+  "local_tf_session_args": {
+    "inter_op_parallelism_threads": 0,
+    "intra_op_parallelism_threads": 0
+  },
+  "lr": 6e-05,
+  "model": {
+    "custom_model": "encoder-decoder",
+    "fcnet_activation": "relu",
+    "lstm_cell_size": 96
+  },
+  "no_done_at_end": true,
+  "num_cpus_for_driver": 1,
+  "num_cpus_per_worker": 1,
+  "num_envs_per_worker": 102,
+  "num_gpus": 4,
+  "num_sgd_iter": 20,
+  "num_workers": 23,
+  "rollout_fragment_length": 440,
+  "sgd_minibatch_size": 1024,
+  "soft_horizon": false,
+  "tf_session_args": {
+    "allow_soft_placement": true,
+    "device_count": {
+      "CPU": 1
+    },
+    "gpu_options": {
+      "allow_growth": true
+    },
+    "inter_op_parallelism_threads": 0,
+    "intra_op_parallelism_threads": 0,
+    "log_device_placement": false
+  },
+  "train_batch_size": 1032240,
+  "vf_clip_param": 30.0,
+  "vf_loss_coeff": 1.0
+}

@@ -1,0 +1,12 @@
+.idea
+__pycache__
+src/talos.egg-info/
+/.mypy_cache/
+src/entry/logs
+.pytest_cache
+.DS_Store
+*.yaml
+/deploy.py
+/create.py
+/.config/
+/src/.amlignore

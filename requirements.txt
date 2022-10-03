@@ -1,0 +1,8 @@
+pyyaml==5.4.1
+ray[rllib]==1.7.0
+mypy==0.910
+pytest-xdist==2.4.0
+tensorflow==2.4.3
+statsmodels==0.13.0
+gym==0.21.0
+matplotlib==3.5.3
