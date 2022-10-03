@@ -4,7 +4,7 @@ Roughly, the idea behind the paper is to demonstrate that RL can be used to find
 
 According to our proposal, the ANN must be trained before deployment in the real world. For this reason, this repository contains two execution modes. The first, `continuing`, refers to the training of the ANN, while the second, `rollout`, evaluates the various methods (RL, classical RM solutions, and heuristic methods).
 
-Because not everyone has access to the kind of computational power needed to reproduce our work, we are also making available the training checkpoints for each scenario in the paper in the folder `training-checkpoints`. You can use it to evaluate the agent's ability to handle the earning while learning problems at any saved checkpoint during the training procedure. To reproduce the images from the paper, we advise using the last available checkpoint.
+Because not everyone has access to the kind of computational power needed to reproduce our work, we are also making available the training checkpoints for each scenario from the paper in the folder `training-checkpoints`. You can use it to evaluate the agent's ability to handle the earning-while-learning problems at any saved checkpoint obtained during the training procedure. To reproduce the images from the paper, we advise using the last available checkpoint.
 
 The code has been develop with [RLLib](https://www.ray.io/rllib). Please refer to their documentation for details.
 
